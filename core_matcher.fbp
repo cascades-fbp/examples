@@ -7,4 +7,4 @@
 Matcher MAP -> IN Log(core/console)
 
 # Feed the data to matcher
-'/opt/gimi/source/designer/var/archive/1/2014-09-24/97/1411571771.zip' -> IN Matcher
+'/archive/1/2014-09-24/97/1411571771.zip' -> IN Matcher

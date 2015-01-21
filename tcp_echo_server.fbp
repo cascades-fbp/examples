@@ -1,5 +1,5 @@
 # TCP Echo Server
-'localhost:9999' -> OPTIONS Server(tcp/server) OUT -> IN Copy(core/splitter)
+'localhost:9999' -> OPTIONS Server(sockets/tcp-server) OUT -> IN Copy(core/splitter)
 
 # Log incoming message
 Copy OUT[0] -> IN Log(core/console)

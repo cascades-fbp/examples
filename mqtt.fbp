@@ -5,5 +5,5 @@ MosquittoPublisher ERR -> IN Errors(core/console)
 Ticker OUT -> IN MosquittoPublisher
 
 # Subscribe to all topics from MQTT broker
-'tcp://127.0.0.1:1883/%23' -> OPTIONS MosquittoSubscriber(mqtt/sub) ERR -> IN Errors(core/console)
+'tcp://127.0.0.1:1883/%23' -> OPTIONS MosquittoSubscriber(mqtt/sub) ERR -> IN Errors
 MosquittoSubscriber OUT -> IN Log(core/console)

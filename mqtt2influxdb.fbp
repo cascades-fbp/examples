@@ -10,7 +10,7 @@
 'host=127.0.0.1:8086,user=root,pass=r00t,db=demo' -> OPTIONS Database(influxdb/write)
 
 # Configure DB entry formatter
-'{"name":"my_series","columns":["value1", "value2", "value2"],"points":[[{{.value1}},"{{.value2}}",{{.value3}}]]}' ->  TPL DataTemplate(core/template)
+'{"name":"my_series","columns":["value1", "value2", "value3"],"points":[[{{.value1}},"{{.value2}}",{{.value3}}]]}' ->  TPL DataTemplate(core/template)
 
 # Pipe data from MQTT to InfluxDB through formatter
 Provider OUT -> IN DataTemplate OUT -> IN Copy(core/splitter)
